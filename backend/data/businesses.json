@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Iron Paradise Gym",
+    "category": "Gym",
+    "location": "Sydney CBD",
+    "price": 45,
+    "services": ["Sauna", "PT", "Group Classes", "24/7 Access"],
+    "vibe": "Performance & Intensity",
+    "description": "Premier fitness facility with state-of-the-art equipment and professional trainers.",
+    "rating": 4.8,
+    "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 2,
+    "name": "Zen Flow Yoga Studio",
+    "category": "Yoga",
+    "location": "Bondi Beach",
+    "price": 35,
+    "services": ["Meditation Room", "Hot Yoga", "Workshops"],
+    "vibe": "Calm & Wellness",
+    "description": "Peaceful yoga sanctuary focusing on mindfulness and holistic wellness.",
+    "rating": 4.9,
+    "image": "https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 3,
+    "name": "Core Strength Pilates",
+    "category": "Pilates",
+    "location": "Surry Hills",
+    "price": 40,
+    "services": ["Reformer Classes", "PT", "Injury Rehab"],
+    "vibe": "Calm & Wellness",
+    "description": "Specialized Pilates studio with certified instructors and reformer equipment.",
+    "rating": 4.7,
+    "image": "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 4,
+    "name": "Thunder Boxing Club",
+    "category": "Boxing",
+    "location": "Newtown",
+    "price": 50,
+    "services": ["Ring Training", "PT", "Sparring Sessions"],
+    "vibe": "Performance & Intensity",
+    "description": "High-energy boxing club for all skill levels with professional coaching.",
+    "rating": 4.6,
+    "image": "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 5,
+    "name": "FitTech Smart Gym",
+    "category": "Gym",
+    "location": "Parramatta",
+    "price": 38,
+    "services": ["Smart Equipment", "App Integration", "Virtual Classes"],
+    "vibe": "Modern & Tech-Forward",
+    "description": "Technology-driven fitness experience with AI-powered workout recommendations.",
+    "rating": 4.5,
+    "image": "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 6,
+    "name": "Community Fitness Hub",
+    "category": "Gym",
+    "location": "Manly",
+    "price": 30,
+    "services": ["Group Classes", "Community Events", "Sauna"],
+    "vibe": "Community & Support",
+    "description": "Friendly neighborhood gym fostering a supportive fitness community.",
+    "rating": 4.4,
+    "image": "https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 7,
+    "name": "FlexiFlow Yoga & Wellness",
+    "category": "Yoga",
+    "location": "Paddington",
+    "price": 42,
+    "services": ["Online Classes", "Workshops", "Retreat Programs"],
+    "vibe": "Flexibility & Lifestyle",
+    "description": "Modern yoga studio offering flexible scheduling and lifestyle integration.",
+    "rating": 4.3,
+    "image": "https://images.pexels.com/photos/4498318/pexels-photo-4498318.jpeg?auto=compress&cs=tinysrgb&w=500"
+  },
+  {
+    "id": 8,
+    "name": "Elite Performance Boxing",
+    "category": "Boxing",
+    "location": "North Sydney",
+    "price": 55,
+    "services": ["PT", "Competition Training", "Nutrition Coaching"],
+    "vibe": "Performance & Intensity",
+    "description": "Elite boxing facility for serious athletes and fitness enthusiasts.",
+    "rating": 4.9,
+    "image": "https://images.pexels.com/photos/4753990/pexels-photo-4753990.jpeg?auto=compress&cs=tinysrgb&w=500"
+  }
+]
