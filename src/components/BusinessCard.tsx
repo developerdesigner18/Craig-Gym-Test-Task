@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Star, DollarSign, Users } from 'lucide-react';
 import type { Business } from '../types';
+import { CompareButton } from './CompareButton';
 
 interface BusinessCardProps {
   business: Business;
@@ -38,6 +39,9 @@ const BusinessCard: React.FC<BusinessCardProps> = ({ business }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-3 right-3">
+          <CompareButton business={business} variant="card" />
+        </div>
+        <div className="absolute top-3 right-12">
           <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
             <Star className="h-4 w-4 text-yellow-400 fill-current" />
             <span className="text-sm font-medium text-gray-900">{business.rating}</span>
