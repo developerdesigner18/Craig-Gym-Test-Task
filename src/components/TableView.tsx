@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Star, DollarSign, Users, Eye, ArrowUpDown } from 'lucide-react';
 import type { Business } from '../types';
+import { CompareButton } from './CompareButton';
 
 interface TableViewProps {
   businesses: Business[];
@@ -97,14 +98,14 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                   #{index + 1}
                 </span>
                 <div className="flex items-center gap-2">
-                  <img 
-                    className="h-8 w-8 rounded-lg object-cover" 
-                    src={business.image} 
+                  <img
+                    className="h-8 w-8 rounded-lg object-cover"
+                    src={business.image}
                     alt={`${business.name} thumbnail`}
                   />
                 </div>
               </div>
-              
+
               <div className="flex items-start justify-between">
                 <div>
                   <h4 className="font-semibold text-gray-900">{business.name}</h4>
@@ -125,18 +126,18 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-1 text-gray-600">
                 <MapPin className="h-4 w-4" />
                 <span className="text-sm">{business.location}</span>
               </div>
-              
+
               <div>
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${getVibeColor(business.vibe)}`}>
                   {business.vibe}
                 </span>
               </div>
-              
+
               <div>
                 <div className="flex items-center gap-1 text-gray-700 mb-2">
                   <Users className="h-4 w-4" />
@@ -220,15 +221,17 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                   <ArrowUpDown className="h-3 w-3" />
                 </button>
               </th>
+              <th scope="col" className="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Compare
+              </th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {sortedBusinesses.map((business, index) => (
-              <tr 
-                key={business.id} 
-                className={`hover:bg-blue-50 transition-all duration-200 ${
-                  index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'
-                }`}
+              <tr
+                key={business.id}
+                className={`hover:bg-blue-50 transition-all duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'
+                  }`}
                 role="row"
               >
                 <td className="px-6 py-5 whitespace-nowrap">
@@ -239,9 +242,9 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                       </span>
                     </div>
                     <div className="flex-shrink-0 h-12 w-12">
-                      <img 
-                        className="h-12 w-12 rounded-lg object-cover shadow-sm" 
-                        src={business.image} 
+                      <img
+                        className="h-12 w-12 rounded-lg object-cover shadow-sm"
+                        src={business.image}
                         alt={`${business.name} facility`}
                       />
                     </div>
@@ -282,7 +285,7 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                       </span>
                     ))}
                     {business.services.length > 3 && (
-                      <span 
+                      <span
                         className="inline-block bg-gray-200 text-gray-700 px-2 py-1 rounded-md text-xs font-medium cursor-help"
                         title={business.services.slice(3).join(', ')}
                       >
@@ -302,6 +305,9 @@ const TableView: React.FC<TableViewProps> = ({ businesses }) => {
                     <span className="text-sm font-bold text-gray-900">{business.rating}</span>
                     <span className="text-xs text-gray-500 ml-1">/5</span>
                   </div>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <CompareButton business={business} variant="table" />
                 </td>
               </tr>
             ))}

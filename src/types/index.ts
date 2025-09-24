@@ -9,6 +9,13 @@ export interface Business {
   description: string;
   rating: number;
   image: string;
+  type: string;
+  reviews?: number;
+  amenities?: string[];
+  hours?: string;
+  monthlyPrice?: number;
+  joinFee?: number;
+  memberCapacity?: number;
 }
 
 export interface FilterState {
@@ -32,6 +39,16 @@ export interface BusinessContextType {
   setFilters: (filters: Partial<FilterState>) => void;
   resetFilters: () => void;
   searchBusinesses: (query: string) => void;
+}
+
+export interface CompareContextType {
+  compareItems: Business[];
+  addToCompare: (business: Business) => void;
+  removeFromCompare: (businessId: number) => void;
+  clearCompare: () => void;
+  showCompareModal: boolean;
+  setShowCompareModal: (show: boolean) => void;
+  openCompareModal: () => void;
 }
 
 export interface ApiResponse<T> {
